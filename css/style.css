@@ -52,12 +52,14 @@ body {
   top: 40%; /* in relation to the parent element */
   left: 50%;
   transform: translate(-50%, -50%); /* shift width, height */
+  text-align: center;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden; /* smooths out animation shake */
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -118,4 +120,29 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+/* link is pseudo class */
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: white;
+  color: #777;
 }
