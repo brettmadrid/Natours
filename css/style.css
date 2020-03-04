@@ -122,7 +122,7 @@ body {
   }
 }
 
-/* link is pseudo class */
+/* link is pseudo class for before btn is clicked*/
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
